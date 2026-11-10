@@ -1,0 +1,12 @@
+# Blender autosave and backup copies
+*.blend[0-9]
+*.blend@
+# Rendered frames and local test renders (rebuild them from the .blend)
+blender/renders/
+renders/
+# Python / OS clutter
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,11 @@
+# Binary scene data lives in Git LFS: the repo stays small to clone and every version stays recoverable.
+*.blend   filter=lfs diff=lfs merge=lfs -text
+*.glb     filter=lfs diff=lfs merge=lfs -text
+*.hdr     filter=lfs diff=lfs merge=lfs -text
+*.exr     filter=lfs diff=lfs merge=lfs -text
+blender/textures/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+blender/textures/**/*.png filter=lfs diff=lfs merge=lfs -text
+*.mp4     filter=lfs diff=lfs merge=lfs -text
+
+# README images stay in plain git so GitHub renders them directly
+media/**  binary
